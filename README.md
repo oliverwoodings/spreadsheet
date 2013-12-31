@@ -1,6 +1,10 @@
 # Spreadsheet
 
-  A CommonJS module for reading Google Spreadsheets.
+  NodeJS module for reading Google Spreadsheets.
+
+  Original version by publicclass: https://github.com/publicclass/spreadsheet
+
+  This version supports passing an authFactory in the options, allowing access to private spreadsheets. It also uses the `request` module instead of `open-uri`
 
 
 ## Install
@@ -15,9 +19,6 @@
 	
 	// Instantiate a spreadsheet using the key directly.
 	var sheet = new Spreadsheet("mykey");
-	
-	// Or just let the module extract it from an URL.
-	var sheet = Spreadsheet.fromURL("http://shared...")
 	
 	// Load the worksheets, callback will be called for each worksheet
 	sheet.worksheets(function(err,ws){
@@ -87,6 +88,12 @@
 	}
 	
 ## History
+
+### 0.4.0 by oliverwoodings
+
+* [Feature] Support for authFactory to allow access to private spreadsheets
+* Moved to using `request` instead of `open-uri`
+* Removed the fromURL method
 
 ### added by baryon
 
