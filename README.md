@@ -4,8 +4,6 @@
 
   Original version by publicclass: https://github.com/publicclass/spreadsheet
 
-  This version supports passing an authFactory in the options, allowing access to private spreadsheets. It also uses the `request` module instead of `open-uri`
-
 
 ## Install
 
@@ -88,6 +86,9 @@
 	}
 	
 ## History
+
+### 0.4.1 by oliverwoodings
+* [Feature] Added Worksheet.mapCells function
 
 ### 0.4.0 by oliverwoodings
 

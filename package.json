@@ -2,11 +2,12 @@
   "name": "spreadsheet",
   "description": "A CommonJS module for reading a Google Spreadsheet.",
   "homepage": "http://github.com/publicclass/spreadsheet",
-  "version": "0.4.0",
-  "author": "Robert Sköld <robert@publicclass.se>",
+  "version": "0.4.1",
+  "author": "Robert Sköld <robert@publicclass.se>, Oliver Woodings <oliver.woodings@gmail.com>",
   "dependencies": {
     "xml2js-expat": "~ 0.2.0",
-    "request": ">= 2.0.2"
+    "request": ">= 2.0.2",
+    "underscore": ">= 1.5.0"
   },
   "main": "./lib/spreadsheet",
   "keywords": ["google", "spreadsheets", "gdata"],
